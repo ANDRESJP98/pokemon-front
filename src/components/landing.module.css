@@ -40,7 +40,7 @@
 
 @media (max-width: 767px) {
   .image {
-    height: 300px; /* Ajustar la altura para dispositivos móviles */
+    height: 767px; /* Ajustar la altura para dispositivos móviles */
   }
 
   .button {
