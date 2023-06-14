@@ -98,6 +98,11 @@
     margin-left: 80px;
     height: auto;
   }
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
   
   .columnsf {
     flex: 0.5;

@@ -12,7 +12,8 @@
     border: 1px solid #000;
     border-radius: 2px;
     padding: 5px;
-    width: 50px;
+    width: 60px;
+    height:60px;
     background-color: black;
   }
   
@@ -27,6 +28,9 @@
     font-size: small;
     color: white;
     text-decoration: none;
+  }
+  .pageLink.active {
+    color:black
   }
   
   .pageLink:hover {

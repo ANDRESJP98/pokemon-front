@@ -129,35 +129,35 @@ export default function Home(){
         <input value={name} type="text" placeholder='Search...' onChange={(e)=>handleInputChange(e)}></input>
             <button  type="submit" onClick={(e)=>handleSubmit(e)} >Search</button>
         </div>
-        <h2>Filter By:</h2>
-        <div>
-        <h2>Alphabetical order</h2>
+        <h4>Filter By:</h4>
+        <div className={style.container}>
+        <h5>Alphabetical order</h5>
         <select value={selectedSort} onChange={e=>handleSort(e)} className={style.order}>
-            <option>---</option>
+            <option>SELECT</option>
             <option value="asc" >A-Z</option>
             <option value="desc">Z-A</option>
         </select>
         </div>
         <div>
-        <h2>Life order</h2>
+        <h5>Life order</h5>
         <select  value={selectedSort} onChange={e=>handleSortLife(e)} className={style.order}>
-            <option>---</option>
+            <option>SELECT</option>
             <option value="asc life" >-life</option>
             <option value="desc life">+life</option>
         </select>
         </div>
         <div>
-        <h2>Attack order</h2>
+        <h5>Attack order</h5>
         <select  value={selectedSort} onChange={e=>handleSortAttack(e)} className={style.order}>
-            <option>---</option>
+            <option>SELECT</option>
             <option value="asc attack">-Attack</option>
             <option value="desc attack">+ Attack</option>
         </select>
         </div>
         <div>
-        <h2>Defense order</h2>
+        <h5>Defense order</h5>
         <select  value={selectedSort} onChange={e=>handleSortDefense(e)} className={style.order}>
-            <option>---</option>
+            <option>SELECT</option>
             <option value="asc defense">-Defense</option>
             <option value="desc defense">+ Defense</option>
         </select>
@@ -190,13 +190,6 @@ export default function Home(){
             <option value="fairy">fairy</option>
             <option value="unknown">unknown</option>
             <option value="shadow">shadow</option>
-        </select>
-        </div>
-        <div>
-        <select value={selectedSort} onChange={e=>handleSortSpeed(e)} className={style.order}>
-            <option>---</option>
-            <option value="asc speed">-Speed</option>
-            <option value="desc speed">+ Speed</option>
         </select>
         </div>
         <div>
