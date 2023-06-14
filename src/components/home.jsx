@@ -132,7 +132,7 @@ export default function Home(){
         <h3>Filter By</h3>
         <div >
         <select value={selectedSort} onChange={e=>handleSort(e)} className={style.order}>
-            <option>Alphabet</option>
+            <option>ABC</option>
             <option value="asc" >A-Z</option>
             <option value="desc">Z-A</option>
         </select>
@@ -144,12 +144,12 @@ export default function Home(){
         </div>
         <div>
         <select  value={selectedSort} onChange={e=>handleSortAttack(e)} className={style.order}>
-            <option>Attack</option>
+            <option>Att</option>
             <option value="asc attack">-Attack</option>
             <option value="desc attack">+ Attack</option>
         </select>
         <select  value={selectedSort} onChange={e=>handleSortDefense(e)} className={style.order}>
-            <option>Defense</option>
+            <option>Def</option>
             <option value="asc defense">-Defense</option>
             <option value="desc defense">+ Defense</option>
         </select>
@@ -182,13 +182,6 @@ export default function Home(){
             <option value="fairy">fairy</option>
             <option value="unknown">unknown</option>
             <option value="shadow">shadow</option>
-        </select>
-        </div>
-        <div>
-        <select value={selectedSort} onChange={e=>handleSortSpeed(e)} className={style.order}>
-            <option>---</option>
-            <option value="asc speed">-Speed</option>
-            <option value="desc speed">+ Speed</option>
         </select>
         </div>
         <div>
