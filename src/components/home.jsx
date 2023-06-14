@@ -129,12 +129,17 @@ export default function Home(){
         <input value={name} type="text" placeholder='Search...' onChange={(e)=>handleInputChange(e)}></input>
             <button  type="submit" onClick={(e)=>handleSubmit(e)} >Search</button>
         </div>
-        <div >
+        <h2>Filter By:</h2>
+        <div>
+        <h2>Alphabetical order</h2>
         <select value={selectedSort} onChange={e=>handleSort(e)} className={style.order}>
             <option>---</option>
             <option value="asc" >A-Z</option>
             <option value="desc">Z-A</option>
         </select>
+        </div>
+        <div>
+        <h2>Life order</h2>
         <select  value={selectedSort} onChange={e=>handleSortLife(e)} className={style.order}>
             <option>---</option>
             <option value="asc life" >-life</option>
@@ -142,27 +147,19 @@ export default function Home(){
         </select>
         </div>
         <div>
+        <h2>Attack order</h2>
         <select  value={selectedSort} onChange={e=>handleSortAttack(e)} className={style.order}>
             <option>---</option>
             <option value="asc attack">-Attack</option>
             <option value="desc attack">+ Attack</option>
         </select>
+        </div>
+        <div>
+        <h2>Defense order</h2>
         <select  value={selectedSort} onChange={e=>handleSortDefense(e)} className={style.order}>
             <option>---</option>
             <option value="asc defense">-Defense</option>
             <option value="desc defense">+ Defense</option>
-        </select>
-        </div>
-        <div>
-        <select  value={selectedSort} onChange={e=>handleSortWeight(e)} className={style.order}>
-            <option>---</option>
-            <option value="asc weight">-Weight</option>
-            <option value="desc weight">+ weight</option>
-        </select>
-        <select  value={selectedSort} onChange={e=>handleSortHeight(e)} className={style.order}>
-            <option>---</option>
-            <option value="asc height">-height</option>
-            <option value="desc height">+ height</option>
         </select>
         </div>
         <div >

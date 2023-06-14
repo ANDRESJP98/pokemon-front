@@ -94,7 +94,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 4px;
+    gap: 4em;
     margin-left: 80px;
     height: auto;
   }
