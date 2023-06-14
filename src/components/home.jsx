@@ -131,7 +131,7 @@ export default function Home(){
         </div>
         <div >
         <select value={selectedSort} onChange={e=>handleSort(e)} className={style.order}>
-            <option>ABC</option>
+            <option>Alphabet</option>
             <option value="asc" >A-Z</option>
             <option value="desc">Z-A</option>
         </select>
@@ -143,12 +143,12 @@ export default function Home(){
         </div>
         <div>
         <select  value={selectedSort} onChange={e=>handleSortAttack(e)} className={style.order}>
-            <option>Att</option>
+            <option>Attack</option>
             <option value="asc attack">-Attack</option>
             <option value="desc attack">+ Attack</option>
         </select>
         <select  value={selectedSort} onChange={e=>handleSortDefense(e)} className={style.order}>
-            <option>Def</option>
+            <option>Defense</option>
             <option value="asc defense">-Defense</option>
             <option value="desc defense">+ Defense</option>
         </select>
