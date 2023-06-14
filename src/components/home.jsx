@@ -129,7 +129,6 @@ export default function Home(){
         <input value={name} type="text" placeholder='Search...' onChange={(e)=>handleInputChange(e)}></input>
             <button  type="submit" onClick={(e)=>handleSubmit(e)} >Search</button>
         </div>
-        <h3>Filter By</h3>
         <div >
         <select value={selectedSort} onChange={e=>handleSort(e)} className={style.order}>
             <option>ABC</option>
