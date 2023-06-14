@@ -129,27 +129,27 @@ export default function Home(){
         <input value={name} type="text" placeholder='Search...' onChange={(e)=>handleInputChange(e)}></input>
             <button  type="submit" onClick={(e)=>handleSubmit(e)} >Search</button>
         </div>
-        <h2>Filter By:</h2>
+        <h3>Filter By</h3>
         <div >
         <select value={selectedSort} onChange={e=>handleSort(e)} className={style.order}>
-            <option>---</option>
+            <option>Alphabet</option>
             <option value="asc" >A-Z</option>
             <option value="desc">Z-A</option>
         </select>
         <select  value={selectedSort} onChange={e=>handleSortLife(e)} className={style.order}>
-            <option>---</option>
+            <option>Life</option>
             <option value="asc life" >-life</option>
             <option value="desc life">+life</option>
         </select>
         </div>
         <div>
         <select  value={selectedSort} onChange={e=>handleSortAttack(e)} className={style.order}>
-            <option>---</option>
+            <option>Attack</option>
             <option value="asc attack">-Attack</option>
             <option value="desc attack">+ Attack</option>
         </select>
         <select  value={selectedSort} onChange={e=>handleSortDefense(e)} className={style.order}>
-            <option>---</option>
+            <option>Defense</option>
             <option value="asc defense">-Defense</option>
             <option value="desc defense">+ Defense</option>
         </select>
@@ -161,7 +161,7 @@ export default function Home(){
             <option value="api">From Api</option>
         </select>
         <select value={selectedFilterType} onChange={e=>handleFilterTypes(e)} className={style.filter}>
-            <option value='All'>All</option>
+            <option value='All'>Types</option>
             <option value="normal">normal</option>
             <option value="fighting">fighting</option>
             <option value="flying">flying</option>

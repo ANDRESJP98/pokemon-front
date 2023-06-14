@@ -17,7 +17,7 @@ export default function Paginacion ({pokemonsPerPage, paginado, allPokemons, cur
         <nav>
             <ul className={style.paginacion} >
                 <li className={style.pageItem}>
-                    <a className={style.pageLink} onClick={()=>paginado(prevPage)}>{"Previous"}</a>
+                    <a className={style.pageLink} onClick={()=>paginado(prevPage)}>{"Prev"}</a>
                 </li>
                 {pageNumbers.slice(firstPage, lastPage).map(number=>(
                     <li className={`${style.pageItem} ${number === currentPage ? style.active : ""}`} key={number}>
